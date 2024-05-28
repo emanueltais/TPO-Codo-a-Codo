@@ -1,0 +1,307 @@
+/* Estilos generales */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto principal */
+}
+
+/* Estilo para el título principal */
+header h1 {
+    font-size: 2.5rem; /* Tamaño del texto del título */
+    font-weight: 700; /* Peso del texto */
+    color: #43DBCF; /* Color del texto */
+}
+
+header .subtitulo {
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    font-weight: 400; /* Peso del subtítulo */
+    color: #ccc; /* Color del subtítulo */
+    margin-top: 0.5rem; /* Margen superior */
+}
+
+/* Estilo para el título de la sección Servicios */
+#servicios h2 {
+    font-size: 2.5rem; /* Tamaño del texto del título */
+    font-weight: 700; /* Peso del texto */
+    color: #43DBCF; /* Color del texto */
+    text-align: center; /* Alinear al centro */
+    margin-bottom: 1.5rem; /* Margen inferior */
+    position: relative; /* Posición relativa para agregar decoración */
+}
+
+#servicios h2::after {
+    content: ''; /* Contenido vacío para la línea decorativa */
+    width: 100px; /* Ancho de la línea */
+    height: 4px; /* Altura de la línea */
+    background-color: #43DBCF; /* Color de la línea */
+    display: block; /* Mostrar como bloque */
+    margin: 10px auto 0; /* Margen para centrar y separar del texto */
+    border-radius: 2px; /* Bordes redondeados */
+}
+
+#servicios ul {
+    list-style-type: none; /* Quitar estilo de lista */
+    padding: 0;
+    text-align: center; /* Alinear texto al centro */
+}
+
+#servicios ul li {
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin: 0.5rem 0; /* Espaciado entre elementos */
+    color: #333; /* Color del texto */
+}
+
+#servicios ul li::before {
+    content: "\f00c"; /* Código unicode para un icono de verificación (Font Awesome) */
+    font-family: 'Font Awesome 5 Free'; /* Fuente de Font Awesome */
+    font-weight: 900; /* Peso del icono */
+    margin-right: 8px; /* Margen derecho para separar el icono del texto */
+    color: #43DBCF; /* Color del icono */
+}
+
+/* Otros estilos generales */
+header {
+    background-color: #222; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto del encabezado */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño del texto del encabezado */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* Color de los enlaces en el encabezado */
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Color de los enlaces al pasar el ratón */
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 2rem;
+    max-width: 1000px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Texto en negrita */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical; /* Permitir el ajuste vertical */
+}
+
+button {
+    background-color: #222; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición de color al pasar el ratón */
+}
+
+button:hover {
+    background-color: #43DBCF; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #222; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0A66C2;
+}
+
+/* Estilos para el botón de volver al inicio */
+#backToTop {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #f0c040;
+    transform: scale(1.1);
+}
+
+#contactForm {
+    justify-content: space-around; 
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#contenedorInfoContacto, 
+#divTerminosCondiciones{
+    text-align: left;
+}
+
+#contenedorInfoContacto a {
+    text-decoration: none;
+}
+
+#divTerminosCondiciones{
+    font-size: 14px;
+}
+
+#contenedorForm {
+    flex: 0 0 60%;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    overflow: auto; /* Permite el scroll si el contenido se desborda */
+}
+
+#contenedorInfoContacto {
+    flex: 0 0 40%;
+    padding: 20px;
+}
+
+#divTerminosCondiciones {
+    display: flex;
+    align-items: center;
+}
+
+#divTerminosCondiciones label {
+    margin-right: 10px; 
+}
+
+#imgContacto{
+    width:700px;
+    min-width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+  
+nav ul li a:hover {
+    transform: scale(1.4);
+    font-size: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(126, 168, 124);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* media para menu hamburguesa*/
+@media (max-width: 550px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  }
+
+/* Estilo para móviles */
+@media (max-width: 570px) {
+    body {
+        font-size: 16px;
+    }
+    img, #contenedorInfoContacto {
+      display: none;
+    }
+  }
+
+/* Estilo para tabletas */
+@media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+/* Estilo para desktops */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
