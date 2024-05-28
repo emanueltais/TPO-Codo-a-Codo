@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquileres Hasta los Codos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section id="contacto">
+        <div>
+            <img width="700" height="350"src="image/contacto.jpg" sizes="100vw" title="Fondo Inmobiliaria">
+        </div>
+        <h2>Contacto</h2>
+        <form id="contactForm" >
+            <div id="contenedorForm">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="consulta">Tipo de Consulta:</label>
+                    <select id="consulta" name="consulta" required>
+                        <option value="">Seleccione...</option>
+                        <option value="alquiler">Alquiler</option>
+                        <option value="compra">Compra</option>
+                        <option value="asesoramiento">Asesoramiento</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto los términos y condiciones</label>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+            <div id="contenedorInfoContacto">
+                <div class="info-de-contacto">Información de contacto</div>
+                <p class="title-footer azul"><strong>Bs. As.:</strong><br> <a href="javascript():;" class="footer-link b">(54) 11-0999999</a><br><strong>Interior: </strong><br><a href="javascript():;" class="footer-link b">(54) 23156879</a> / <a href="javascript():;" class="footer-link b">23156879</a><br>‍<br><strong>Email:</strong> <br>‍<a href="mailto:info@ayuda.com.ar" class="footer-link b">info@ayuda.com.ar</a><br><br></p>
+               
+            </div>
+        </form>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/cargainc.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
